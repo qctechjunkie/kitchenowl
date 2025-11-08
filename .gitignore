@@ -1,0 +1,37 @@
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Database data
+database/
+*.sql
+*.sqlite
+
+# Logs
+logs/
+*.log
+
+# Media and custom templates
+media/
+custom-templates/
+certs/
+
+# Docker volumes
+docker-compose.override.yml
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+tmp/
+temp/

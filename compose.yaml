@@ -1,0 +1,21 @@
+services:
+  back:
+    image: tombursch/kitchenowl:latest
+    restart: unless-stopped
+    ports:
+      - ${HTTP_PORT:-8080}:8080
+    environment:
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:?secret key required}
+    volumes:
+      - kitchenowl_data:/data
+    env_file:
+      - .env
+    networks:
+      - scoobydoo
+
+volumes:
+  kitchenowl_data:
+
+networks:
+  scoobydoo:
+    external: true

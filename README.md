@@ -66,6 +66,7 @@ http://localhost:8040
 |----------|-------------|----------|---------|
 | `JWT_SECRET_KEY` | Secret key for JWT token signing | Yes | None |
 | `HTTP_PORT` | Host port to expose the application | No | 8080 |
+| `FRONT_URL` | Public URL for accessing KitchenOwl (used for links and CORS) | No | None |
 
 ### Volumes
 
